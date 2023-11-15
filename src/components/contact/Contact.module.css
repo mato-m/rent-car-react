@@ -1,0 +1,50 @@
+.contactMain {
+  width: 100%;
+  text-align: center;
+}
+.contactMain > h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+.contactMain > h3 {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.contactWrapper > iframe {
+  border: none;
+  min-height: 40svh;
+  width: 100%;
+}
+.contactData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+}
+.contactData > a {
+  text-decoration: none;
+  color: #e1790b;
+  display: block;
+  width: 80%;
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+@media screen and (min-width: 768px) {
+  .contactData > a {
+    font-size: 1.5rem;
+  }
+  .contactWrapper {
+    min-height: 50svh;
+    flex-direction: row;
+  }
+  .contactData,
+  .contactWrapper > iframe {
+    width: 50%;
+  }
+}

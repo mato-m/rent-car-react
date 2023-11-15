@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body,
+html {
+  background: #121212;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #e1790b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,
+html,
+input,
+button {
+  font-family: "Roboto", sans-serif;
+}
+.animated-container {
+  justify-content: center;
+}
+.ReactModal__Overlay {
+  background: transparent !important;
+}
+.ReactModal__Content {
+  text-align: center;
+  background: #121212dd !important;
+  border: solid #e1790b 1px !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.ReactModal__Content table {
+  margin: 20px 0;
+  border-collapse: collapse;
+  text-align: center;
+}
+.ReactModal__Content table,
+.ReactModal__Content table td,
+.ReactModal__Content table th {
+  border: solid #e1790b 1px;
+  padding: 20px;
+}

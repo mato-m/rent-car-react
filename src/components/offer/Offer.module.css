@@ -1,0 +1,51 @@
+.offerMain {
+  display: flex;
+  flex-wrap: wrap;
+}
+.offerMain > div {
+  width: 100%;
+  text-align: center;
+}
+.offerMain > div:not(:first-child) > div {
+  padding: 0 40px;
+}
+.offerMain > div:not(:first-child) > div {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+.offerMain > div > div > svg {
+  margin-bottom: 20px;
+}
+.offerMain > div:not(:first-child) {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.offerMain > div:first-child {
+  position: relative;
+}
+.offerMain > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imageOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #12121299;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e1790b;
+  font-size: 2rem;
+  text-shadow: 1px 1px 10px #121212;
+}
+@media screen and (min-width: 768px) {
+  .offerMain > div {
+    width: 50%;
+  }
+}

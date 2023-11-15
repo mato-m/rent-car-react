@@ -1,0 +1,118 @@
+.carsMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.carsMain > h2 {
+  margin: 50px 0;
+  font-size: 2rem;
+}
+.priceOverlay {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #12121288;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #e1790b;
+  padding: 10px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.carFlexWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.carItem {
+  width: 90%;
+  margin: 20px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.carItem > div {
+  position: relative;
+}
+.carOverlay {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 3px);
+  background: #12121299;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+  color: #e1790b;
+  text-shadow: #121212 1px 1px 8px;
+  font-size: 1.5rem;
+}
+.carOverlay > span:not(:first-child) {
+  margin: 10px 0;
+}
+.carOverlay > button,
+.modalButton {
+  background: transparent;
+  text-shadow: #121212 1px 1px 8px;
+  border: solid #e1790b 1px;
+  padding: 15px 40px;
+  color: #e1790b;
+  transition: 0.3s;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.carOverlay > button:hover,
+.modalButton:hover {
+  background: #e1790b;
+  color: #121212;
+}
+.seeMoreButton {
+  background: transparent;
+  text-shadow: #121212 1px 1px 8px;
+  border: solid #e1790b 1px;
+  padding: 15px 40px;
+  color: #e1790b;
+  transition: 0.3s;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.seeMoreButton:hover {
+  background: #e1790b88 !important;
+  color: #121212;
+}
+.carItem:hover .carOverlay {
+  opacity: 1;
+}
+.carItem:hover .priceOverlay {
+  opacity: 0;
+}
+.carItem > span {
+  transition: 0.3s;
+}
+.carItem:hover > span {
+  opacity: 0;
+}
+.carItem > div > img {
+  width: 100%;
+  max-height: 300px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.carModel {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .carItem {
+    width: 40%;
+  }
+}
