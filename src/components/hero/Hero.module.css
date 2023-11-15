@@ -1,7 +1,7 @@
 .heroMainWrapper {
   width: 100%;
   min-height: 100svh;
-  background-image: url("./hero.jpg");
+  background-image: url("../../assets/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
